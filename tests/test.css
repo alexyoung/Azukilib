@@ -1,0 +1,16 @@
+body { background-color: white; font-family: "Helvetica Neue", Helvetica, sans-serif; padding: 0 4em 2em 4em; margin: 0; font-size: 14px; }
+
+h1 { font-family: "Helvetica Neue", Helvetica, sans-serif; font-weight: bold; color: #411; }
+h2 { color: #292; font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 2em; margin: 0; padding: 5px 0; letter-spacing: -2px; }
+h3 { color: #141; margin: 10px 0 4px 0; padding: 0; font-size: normal}
+p { margin: 10px 0 0 0; padding: 0; }
+h1 img { margin: 0 0 0 0; padding: 0 0 0 20px; clear: none;}
+a { color: #333; text-decoration: none; background-color: #ffc; }
+a:hover { background-color: #333; color: white; text-decoration: none; }
+
+h2.page_title { color: #ff3092; text-align: left;}
+
+#Busybox { background-color: #000; color: #fff; }
+#HelpContainer { background-color: #000; color: #fff; }
+
+#Logo { float: right; }

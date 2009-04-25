@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>AzukiLib test file</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="../../../lib/prototype.js" type="text/javascript"></script>
+  <script src="../../../lib/unittest.js" type="text/javascript"></script>
+  <script src="../../../azukilib.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../../test.css" type="text/css" />
+</head>
+<body>
+<img src="../../../images/logo.gif" id="Logo" />
+<h1>AzukiLib test file</h1>
+<p>
+  Tests for forms/remote_form.js
+</p>
+
+<!-- Log output -->
+<div id="testlog"> </div>
+
+<div id="Sandbox" style="display: none">
+  <a href="edit" class="edit_person" id="Person_1">Edit person</a>
+</div>
+
+<!-- Tests follow -->
+<script type="text/javascript" language="javascript" charset="utf-8">
+// <![CDATA[
+  new Test.Unit.Runner({
+    setup: function() { with (this)
+    {
+    }},
+    
+    teardown: function() { with(this)
+    {
+    }},
+    
+    test_instantiation: function() { with(this)
+    {
+      var remote_form = new Azuki.Forms.Remote({
+        form_id: 'Person',
+        controller_name: 'people',
+        item_name: 'person'
+      })
+      
+      assertEqual('/people/edit/', remote_form.options.edit_url)
+      assertEqual('/people/destroy/', remote_form.options.destroy_url)
+    }}
+  })
+// ]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+project_1:
+  project_path: ../project_1/trunk/
+  css_target: public/stylesheets/screen.css
+  insert_css: true
+  javascript_target: public/javascripts/lib/
+  image_target: public/images/azuki/
+  image_relative: /images/azuki/
+project_2:
+  project_path: ../project_2/trunk/
+  css_target: public/stylesheets/screen.css
+  insert_css: true
+  javascript_target: public/javascripts/lib/
+  image_target: public/images/azuki/
+  image_relative: /images/azuki/

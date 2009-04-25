@@ -1,0 +1,59 @@
+h2. AzukiLib
+
+!http://dl.getdropbox.com/u/221414/blogs/logo.gif!
+
+This library provides useful JavaScript classes for dealing with:
+
+* Popup windows, lightboxes, "busy" feedback messages
+* Contextual help
+* Keyboard shortcuts
+* Form enhancements for searching selects, adding resizers to textareas
+* "Controller" abstraction, to help you encapsulate your JavaScript behaviour for sections on your site
+* Loading and management of "remote forms" - create/edit/delete forms hosted on your server that you want to display as a popup with Ajax
+
+It also provides pre-processor scripts for integrating the library with your project.
+
+The aims of this library are:
+
+* To unite the reusable JavaScript in my applications
+* To improve the encapsulation in JavaScript code
+* To make the relationship between the application and JavaScript more obvious
+* To provide a rich set of tools for enhancing web applications
+
+AzukiLib is comprised of:
+
+* JavaScript classes
+* A set of images for icons and feedback messages
+* Example CSS
+* Unit tests
+* Rake tasks for producing a single library file (with boilerplate comments removed), and installing the css, images and javascripts into your project
+
+This library depends on Prototype (http://www.prototypejs.org/).
+
+h2. Usage
+
+You can use the JavaScript files in src/ in part or the entire thing as azukilib.js.  Build azukilib.js like this:
+
+rake azukilib:compile
+
+The config.yml file is expected to contain various settings, including:
+
+* The location of your project which you're going to use Azuki with.
+* Locations for your project's CSS, images and JavaScript files.
+* insert_css: Add Azuki's CSS to your project's CSS file (rather than loading multiple files to cut down the number of remote requests).  CSS already added by Azuki will be replaced.
+* image_relative: Azuki's pre-processor will replace image paths in azuki.css and azukilib.js so you can keep Azuki's example images separate to your project's images.
+
+h2. Background
+
+AzukiLib is a set of libraries used by Helicoid Limited's web applications:
+
+* Tiktrac - Timesheets for businesses: http://tiktrac.com
+* Ebiwrite - Tools for translators: http://ebiwrite.com
+* Helipad - A simple web notepad: http://pad.helicoid.net
+* And probably a lot more
+
+h3. History
+
+* 25 April 2009: Added to GitHub
+* 11 December 2007: Basic unit tests added, started work on cleaning up the API, imported into repository
+* 10 December 2007: Extraction from Tiktrac/Ebiwrite started

@@ -1,0 +1,2 @@
+module AzukiLib
+end

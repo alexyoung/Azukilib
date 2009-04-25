@@ -1,0 +1,21 @@
+/* Busybox */
+#Busybox { position: absolute; z-index: 1000; padding: 1em !important; left: 0; top: 0; margin: 0 0 0 0 !important; width: 138px; height: 81px; position: absolute; }
+
+/* Contextual help */
+a.help { margin-left: 1px; padding-left: 16px; background: url('/images/azuki/help.gif') no-repeat left; font-size: 86% !important; background-position: 0; white-space: nowrap; cursor: pointer }
+#HelpContainer { width: 500px; z-index: 1001;}
+#HelpContent { margin: 4px; padding: 10px; text-align: left; line-height: 1.2; z-index: 101; background-color: #fff; }
+#HelpContent h3 { text-align: center; font-size: 120% !important; border-bottom: 1px solid #ccc; margin-top: 0; margin-bottom: 10px; }
+
+/* Virtual windows */
+.popinfo_container { position: absolute; z-index: 1000; padding: 1em !important; left: 0; top: 0; margin: 0 0 0 0 !important; border: 2px solid #999 !important; background-color: #ccc; text-align: center;}
+.popinfo_frame { display: block; position: absolute; margin: -3em 0 0 0; width: 10em; z-index: 1; font-size: 12px; }
+.popinfo_inner { display: block; position: absolute; z-index: 1; border: solid 1px #999; background-color: #ff8; text-align: center; margin: 0; padding: 4px; color: #000 }
+.popinfo_image { display: block; position: absolute; top: 23px; z-index: 1; width: 28px; height: 11px; padding: 0; margin: 0; background: transparent url('/images/azuki/triangle.gif') no-repeat; }
+
+/* Keyboard shortcuts */
+div.accesskey { text-decoration: underline; display: inline; margin: 0; padding: 0;}
+span.accesskey { text-decoration: underline; }
+
+/* Textarea extensions */
+.bigger, .smaller { cursor: pointer }

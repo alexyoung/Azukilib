@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>AzukiLib test file</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="../../../lib/prototype.js" type="text/javascript"></script>
+  <script src="../../../lib/unittest.js" type="text/javascript"></script>
+  <script src="../../../azukilib.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../../test.css" type="text/css" />
+</head>
+<body>
+<img src="../../../images/logo.gif" id="Logo" />
+<h1>AzukiLib test file</h1>
+<p>
+  Tests for forms/select_search.js
+</p>
+
+<!-- Log output -->
+<div id="testlog"> </div>
+
+<div id="Sandbox">
+  <form>
+    <input type="text" value="Search" id="SearchInput" />
+    <select id="SearchOptions">
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="4">Four</option>
+      <option value="5">Five</option>
+      <option value="6">Six</option>
+      <option value="7">Seven</option>
+      <option value="8">Eight</option>
+    </select>
+  </form>
+</div>
+
+<!-- Tests follow -->
+<script type="text/javascript" language="javascript" charset="utf-8">
+// <![CDATA[
+  new Test.Unit.Runner({
+    setup: function() { with (this)
+    {
+    }},
+    
+    teardown: function() { with(this)
+    {
+    }},
+    
+    test_search: function() { with(this)
+    {
+      var search = new Azuki.Forms.SelectSearch('SearchInput', 'SearchOptions')
+      
+      $('SearchInput').value = 'five'
+      search.search()
+      assertEqual(5, $('SearchOptions').value)
+      
+      /* Case shouldn't matter */
+      $('SearchInput').value = 'FOUR'
+      search.search()
+      assertEqual(4, $('SearchOptions').value)
+    }}
+  })
+// ]]>
+</script>
+</body>
+</html>
