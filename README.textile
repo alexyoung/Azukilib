@@ -1,5 +1,3 @@
-h2. AzukiLib
-
 !http://dl.getdropbox.com/u/221414/blogs/logo.gif!
 
 This library provides useful JavaScript classes for dealing with:
