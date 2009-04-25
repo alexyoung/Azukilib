@@ -28,6 +28,15 @@ AzukiLib is comprised of:
 
 This library depends on "Prototype":http://www.prototypejs.org/.
 
+h2. Controllers
+
+I split the code in my projects up into controllers.  Controllers generally map to a Rails controller.  They're automatically loaded and run by matching the document body ID to your controller:
+
+* HTML body ID set to Tasks
+* Azuki attempts to load TasksController and call its run method.  If it's a class, it will instantiate the class instead.
+
+My Rails projects generally set the body ID to the name of the controller to make it easier to specialise generalised CSS.  It's also helped me keep my JavaScript reusable across projects.
+
 h2. Usage
 
 You can use the JavaScript files in src/ in part or the entire thing as azukilib.js.  Build azukilib.js like this:
