@@ -28,7 +28,7 @@ AzukiLib is comprised of:
 * Unit tests
 * Rake tasks for producing a single library file (with boilerplate comments removed), and installing the css, images and javascripts into your project
 
-This library depends on Prototype (http://www.prototypejs.org/).
+This library depends on "Prototype":http://www.prototypejs.org/.
 
 h2. Usage
 
@@ -47,9 +47,9 @@ h2. Background
 
 AzukiLib is a set of libraries used by Helicoid Limited's web applications:
 
-* Tiktrac - Timesheets for businesses: http://tiktrac.com
-* Ebiwrite - Tools for translators: http://ebiwrite.com
-* Helipad - A simple web notepad: http://pad.helicoid.net
+* "Tiktrac":http://tiktrac.com - Timesheets for businesses: 
+* "Ebiwrite":http://ebiwrite.com - Tools for translators
+* "Helipad":http://pad.helicoid.net - A simple web notepad
 * And probably a lot more
 
 h3. History
@@ -57,3 +57,8 @@ h3. History
 * 25 April 2009: Added to GitHub
 * 11 December 2007: Basic unit tests added, started work on cleaning up the API, imported into repository
 * 10 December 2007: Extraction from Tiktrac/Ebiwrite started
+* Early 2007: Library created by extracting code from Helicoid's products
+
+h2. License
+
+This project is placed in the public domain.
